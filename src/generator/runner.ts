@@ -10,7 +10,8 @@ const namespaces = [
     { className: "XSD", ontology: ontl.XSD },
     { className: "DC", ontology: ontl.DC },
     { className: "DCTERMS", ontology: ontl.DCTERMS },
-    { className: "VANN", ontology: ontl.VANN }
+    { className: "VANN", ontology: ontl.VANN },
+    { className: "SHACL", ontology: ontl.SHACL }
 ];
 
 writeNamespaceClasses(namespaces, path.join(__dirname, "../namespace/"));

@@ -1,7 +1,7 @@
 {
   "name": "nmspc",
   "description": "A collection of RDF namespaces.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Matthieu Bosquet",
   "license": "MIT",
   "main": "dist/index.js",

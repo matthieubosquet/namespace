@@ -3,7 +3,9 @@ import { getPreferredNamespacePrefix, getPreferredNamespaceUri, getStore, getLat
 import { writeFile } from 'fs';
 
 export function sanitizeClassName(name: string): string {
-    return name.replace('-', '_');
+    return name
+        .replace('-', '_')
+        .replace(new RegExp("/^name$/"), "name_");
 }
 
 export function generateNamespaceClass(className: string, baseURI: string, prefixLabel: string, version: string = "", names: string[]) {
