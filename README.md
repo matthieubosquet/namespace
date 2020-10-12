@@ -7,7 +7,7 @@ A collection of RDF namespaces as javascript classes.
 Install with `npm install nmspc`. Each namespace has a base URI and a prefix label for the sake of writing prefixed names (see the [Turtle spec IRIs](https://www.w3.org/TR/turtle/#sec-iri) and the [Wikipedia article on compact URIs](https://en.wikipedia.org/wiki/CURIE)). Other properties return the full URI of each resource defined in the namespace.
 
 ```javascript
-import * as NS from '../index';
+import * as NS from 'nmspc';
 
 console.log("DC:", NS.DC.baseURI, NS.DC.creator);
 // outputs: DC: http://purl.org/dc/elements/1.1/ http://purl.org/dc/elements/1.1/creator
