@@ -1,0 +1,12 @@
+{
+    "extends": "@tsconfig/node12/tsconfig.json",
+    "compilerOptions": {
+        "declaration": false
+    },
+    "include": [
+        "./runner.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
