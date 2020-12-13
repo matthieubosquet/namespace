@@ -5,22 +5,22 @@ export default class RDF {
     public static readonly version: string = "2014-02-25";
 
     // Names
-    public static readonly Alt: String = RDF.baseURI.concat("Alt");
-    public static readonly Bag: String = RDF.baseURI.concat("Bag");
-    public static readonly HTML: String = RDF.baseURI.concat("HTML");
-    public static readonly List: String = RDF.baseURI.concat("List");
-    public static readonly PlainLiteral: String = RDF.baseURI.concat("PlainLiteral");
-    public static readonly Property: String = RDF.baseURI.concat("Property");
-    public static readonly Seq: String = RDF.baseURI.concat("Seq");
-    public static readonly Statement: String = RDF.baseURI.concat("Statement");
-    public static readonly XMLLiteral: String = RDF.baseURI.concat("XMLLiteral");
-    public static readonly first: String = RDF.baseURI.concat("first");
-    public static readonly langString: String = RDF.baseURI.concat("langString");
-    public static readonly nil: String = RDF.baseURI.concat("nil");
-    public static readonly object: String = RDF.baseURI.concat("object");
-    public static readonly predicate: String = RDF.baseURI.concat("predicate");
-    public static readonly rest: String = RDF.baseURI.concat("rest");
-    public static readonly subject: String = RDF.baseURI.concat("subject");
-    public static readonly type: String = RDF.baseURI.concat("type");
-    public static readonly value: String = RDF.baseURI.concat("value");
+    public static readonly Alt: string = RDF.baseURI.concat("Alt");
+    public static readonly Bag: string = RDF.baseURI.concat("Bag");
+    public static readonly HTML: string = RDF.baseURI.concat("HTML");
+    public static readonly List: string = RDF.baseURI.concat("List");
+    public static readonly PlainLiteral: string = RDF.baseURI.concat("PlainLiteral");
+    public static readonly Property: string = RDF.baseURI.concat("Property");
+    public static readonly Seq: string = RDF.baseURI.concat("Seq");
+    public static readonly Statement: string = RDF.baseURI.concat("Statement");
+    public static readonly XMLLiteral: string = RDF.baseURI.concat("XMLLiteral");
+    public static readonly first: string = RDF.baseURI.concat("first");
+    public static readonly langString: string = RDF.baseURI.concat("langString");
+    public static readonly nil: string = RDF.baseURI.concat("nil");
+    public static readonly object: string = RDF.baseURI.concat("object");
+    public static readonly predicate: string = RDF.baseURI.concat("predicate");
+    public static readonly rest: string = RDF.baseURI.concat("rest");
+    public static readonly subject: string = RDF.baseURI.concat("subject");
+    public static readonly type: string = RDF.baseURI.concat("type");
+    public static readonly value: string = RDF.baseURI.concat("value");
 }

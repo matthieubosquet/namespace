@@ -14,7 +14,7 @@ export function generateNamespaceClass(className: string, baseURI: string, prefi
     public static readonly prefixLabel: string = "${prefixLabel}";
     public static readonly version: string = "${version}";
 
-    // Names${names.map(name => `\n    public static readonly ${sanitizeClassName(name)}: String = ${className}.baseURI.concat("${name}");`).join("")}\n}`;
+    // Names${names.map(name => `\n    public static readonly ${sanitizeClassName(name)}: string = ${className}.baseURI.concat("${name}");`).join("")}\n}`;
 }
 
 export async function writeNamespaceClass(className: string, ontology: NodeJS.ReadableStream, outDir: string): Promise<void> {

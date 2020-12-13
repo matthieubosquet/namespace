@@ -5,10 +5,10 @@ export default class VANN {
     public static readonly version: string = "2005-04-01";
 
     // Names
-    public static readonly changes: String = VANN.baseURI.concat("changes");
-    public static readonly example: String = VANN.baseURI.concat("example");
-    public static readonly preferredNamespacePrefix: String = VANN.baseURI.concat("preferredNamespacePrefix");
-    public static readonly preferredNamespaceUri: String = VANN.baseURI.concat("preferredNamespaceUri");
-    public static readonly termGroup: String = VANN.baseURI.concat("termGroup");
-    public static readonly usageNote: String = VANN.baseURI.concat("usageNote");
+    public static readonly changes: string = VANN.baseURI.concat("changes");
+    public static readonly example: string = VANN.baseURI.concat("example");
+    public static readonly preferredNamespacePrefix: string = VANN.baseURI.concat("preferredNamespacePrefix");
+    public static readonly preferredNamespaceUri: string = VANN.baseURI.concat("preferredNamespaceUri");
+    public static readonly termGroup: string = VANN.baseURI.concat("termGroup");
+    public static readonly usageNote: string = VANN.baseURI.concat("usageNote");
 }
