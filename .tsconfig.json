@@ -3,7 +3,9 @@
     "compilerOptions": {
         "declaration": true,
         "outDir": "dist",
-        "sourceMap": true
+        "sourceMap": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true
     },
     "include": [
         "src/index.ts"

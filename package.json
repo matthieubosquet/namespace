@@ -1,17 +1,14 @@
 {
   "name": "nmspc",
   "description": "A collection of RDF namespaces.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Matthieu Bosquet",
   "license": "MIT",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "build": "npm run clean && tsc -p .tsconfig.json",
     "build-test": "npm run clean && tsc -p test/.tsconfig.json",

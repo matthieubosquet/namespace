@@ -1,7 +1,7 @@
-import * as NS from '../index';
+import * as NS from '../src/index';
 
 
-const x = NS.DC.baseURI;
+const x = NS.DCTERMS.baseURI;
 
-console.log("DC:", NS.DC.baseURI, NS.DC.creator);
+console.log("DC:", NS.DCTERMS.baseURI, NS.DCTERMS.creator);
 console.log("RDF:", NS.RDF.baseURI, NS.RDF.Alt);
