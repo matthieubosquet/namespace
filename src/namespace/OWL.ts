@@ -2,7 +2,7 @@ export default class OWL {
     // Namespace description
     public static readonly baseURI: string = "http://www.w3.org/2002/07/owl#";
     public static readonly prefixLabel: string = "owl";
-    public static readonly version: string = "";
+    public static readonly version: string = "2012-12-11";
 
     // Names
     public static readonly AllDifferent: String = OWL.baseURI.concat("AllDifferent");

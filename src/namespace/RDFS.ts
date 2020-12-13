@@ -2,7 +2,7 @@ export default class RDFS {
     // Namespace description
     public static readonly baseURI: string = "http://www.w3.org/2000/01/rdf-schema#";
     public static readonly prefixLabel: string = "rdfs";
-    public static readonly version: string = "";
+    public static readonly version: string = "2014-02-25";
 
     // Names
     public static readonly Class: String = RDFS.baseURI.concat("Class");

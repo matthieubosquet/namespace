@@ -2,7 +2,7 @@ export default class RDF {
     // Namespace description
     public static readonly baseURI: string = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
     public static readonly prefixLabel: string = "rdf";
-    public static readonly version: string = "";
+    public static readonly version: string = "2014-02-25";
 
     // Names
     public static readonly Alt: String = RDF.baseURI.concat("Alt");

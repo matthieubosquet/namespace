@@ -1,11 +1,10 @@
-import { DataFactory } from 'n3';
 import { getPreferredNamespacePrefix, getPreferredNamespaceUri, getStore, getLatestIssuedDate, getIsDefinedBy } from './store';
 import { writeFile } from 'fs';
 
 export function sanitizeClassName(name: string): string {
     return name
         .replace('-', '_')
-        .replace(new RegExp("/^name$/"), "name_");
+        .replace(/^name$/, "name_");
 }
 
 export function generateNamespaceClass(className: string, baseURI: string, prefixLabel: string, version: string = "", names: string[]) {
@@ -33,11 +32,12 @@ export async function writeNamespaceClass(className: string, ontology: NodeJS.Re
             if (err) {
                 return console.error(err);
             }
-            console.log("File created!");
+            console.log(`- ${className}`);
         }
     );
 }
 
 export function writeNamespaceClasses(namespaceClasses: { className: string, ontology: NodeJS.ReadableStream }[], outDir: string): void {
+    console.log("Writing ontologies:");
     namespaceClasses.forEach(namespaceClass => writeNamespaceClass(namespaceClass.className, namespaceClass.ontology, outDir));
 }
