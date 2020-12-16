@@ -26,6 +26,7 @@ export default class SOLID {
     public static readonly logoutEndpoint: string = SOLID.baseURI.concat("logoutEndpoint");
     public static readonly notification: string = SOLID.baseURI.concat("notification");
     public static readonly oidcIssuer: string = SOLID.baseURI.concat("oidcIssuer");
+    public static readonly oidcRegistration: string = SOLID.baseURI.concat("oidcRegistration");
     public static readonly patches: string = SOLID.baseURI.concat("patches");
     public static readonly privateTypeIndex: string = SOLID.baseURI.concat("privateTypeIndex");
     public static readonly publicTypeIndex: string = SOLID.baseURI.concat("publicTypeIndex");

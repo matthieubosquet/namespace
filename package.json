@@ -30,7 +30,7 @@
     "@types/ejs": "^3.0.5",
     "@types/node": "^14.14.14",
     "n3": "^1.6.4",
-    "ontl": "^0.1.11",
+    "ontl": "^0.1.12",
     "rdf-parse": "^1.6.1",
     "rdf-store-stream": "^1.1.0",
     "typescript": "^4.1.3"
