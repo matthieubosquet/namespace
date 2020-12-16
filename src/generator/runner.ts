@@ -8,9 +8,9 @@ const namespaces = [
     { className: "RDFS", ontology: ontl.RDFS },
     { className: "OWL", ontology: ontl.OWL },
     { className: "XSD", ontology: ontl.XSD },
-    { className: "DCTERMS", ontology: ontl.DCTERMS },
+    { className: "DC", ontology: ontl.DCTERMS },
     { className: "SHACL", ontology: ontl.SHACL },
-    { className: "SOLIDTERMS", ontology: ontl.SOLIDTERMS },
+    { className: "SOLID", ontology: ontl.SOLIDTERMS },
     { className: "VANN", ontology: ontl.VANN }
 
 ];
