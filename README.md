@@ -10,7 +10,7 @@ Install with `npm install nmspc`. Each namespace has a base URI and a prefix lab
 import * as NS from 'nmspc';
 
 console.log("DC:", NS.DC.baseURI, NS.DC.creator);
-// outputs: DC: http://purl.org/dc/elements/1.1/ http://purl.org/dc/elements/1.1/creator
+// outputs: DC: http://purl.org/dc/terms/ http://purl.org/dc/terms/creator
 console.log("RDF:", NS.RDF.baseURI, NS.RDF.Alt);
 // outputs: RDF: http://www.w3.org/1999/02/22-rdf-syntax-ns# http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt
 ```
@@ -27,6 +27,6 @@ The prefixes used/recognised/required by the generator are:
 - `vann:preferredNamespacePrefix` for the prefixLabel property
 - `vann:preferredNamespaceUri` for the baseUri property
 - `rdfs:isDefinedBy` for every name defined in the namespace
-- `dcterms:issued` for the version property
+- `dc:issued` for the version property
 
 See the [matthieubosquet/ontologies](https://github.com/matthieubosquet/ontologies) repository for example ontologies serialised as turtle and described using those aforementioned prefixes and [OWL 2 annotation properties](https://www.w3.org/TR/owl-syntax/#Annotation_Properties) where possible.
