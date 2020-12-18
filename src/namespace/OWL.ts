@@ -1,4 +1,4 @@
-export default class OWL {
+export class OWL {
     // Namespace description
     public static readonly baseURI: string = "http://www.w3.org/2002/07/owl#";
     public static readonly prefixLabel: string = "owl";

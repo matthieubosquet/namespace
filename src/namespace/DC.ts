@@ -1,4 +1,4 @@
-export default class DC {
+export class DC {
     // Namespace description
     public static readonly baseURI: string = "http://purl.org/dc/terms/";
     public static readonly prefixLabel: string = "dc";

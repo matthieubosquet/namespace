@@ -1,4 +1,4 @@
-export default class XSD {
+export class XSD {
     // Namespace description
     public static readonly baseURI: string = "http://www.w3.org/2001/XMLSchema#";
     public static readonly prefixLabel: string = "xsd";

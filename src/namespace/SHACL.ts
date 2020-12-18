@@ -1,4 +1,4 @@
-export default class SHACL {
+export class SHACL {
     // Namespace description
     public static readonly baseURI: string = "http://www.w3.org/ns/shacl#";
     public static readonly prefixLabel: string = "shacl";

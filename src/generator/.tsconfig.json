@@ -4,7 +4,7 @@
         "declaration": false
     },
     "include": [
-        "./runner.ts"
+        "runner.ts"
     ],
     "exclude": [
         "node_modules"

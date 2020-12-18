@@ -8,7 +8,7 @@ export function sanitizeClassName(name: string): string {
 }
 
 export function generateNamespaceClass(className: string, baseURI: string, prefixLabel: string, version: string = "", names: string[]) {
-    return `export default class ${className} {
+    return `export class ${className} {
     // Namespace description
     public static readonly baseURI: string = "${baseURI}";
     public static readonly prefixLabel: string = "${prefixLabel}";

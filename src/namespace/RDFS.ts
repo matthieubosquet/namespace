@@ -1,4 +1,4 @@
-export default class RDFS {
+export class RDFS {
     // Namespace description
     public static readonly baseURI: string = "http://www.w3.org/2000/01/rdf-schema#";
     public static readonly prefixLabel: string = "rdfs";

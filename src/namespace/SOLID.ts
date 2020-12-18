@@ -1,4 +1,4 @@
-export default class SOLID {
+export class SOLID {
     // Namespace description
     public static readonly baseURI: string = "http://www.w3.org/ns/solid/terms#";
     public static readonly prefixLabel: string = "solid";

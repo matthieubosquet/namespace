@@ -1,4 +1,4 @@
-export default class VANN {
+export class VANN {
     // Namespace description
     public static readonly baseURI: string = "http://purl.org/vocab/vann/";
     public static readonly prefixLabel: string = "vann";
