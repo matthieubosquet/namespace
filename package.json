@@ -10,12 +10,11 @@
     "dist"
   ],
   "scripts": {
-    "build": "npm run clean && tsc -p .tsconfig.json",
-    "build:test": "npm run clean && tsc -p test/.tsconfig.json",
-    "build:namespace": "npm run build && tsc -p src/generator/.tsconfig.json && node src/generator/runner.js && rm src/generator/*.js",
-    "clean": "rm -rf dist",
-    "prepublishOnly": "npm install && tsc -p .tsconfig.json",
-    "test": "npm run build:test && node dist/test/index.test.js"
+    "audit": "npm audit --production --audit-level=high",
+    "build": "tsc",
+    "build:namespace": "npm run build && tsc -p src/generator/tsconfig.json && node src/generator/runner.js && rm src/generator/*.js",
+    "prepublishOnly": "npm run audit && npm ci --ignore-scripts && npm run build && npm run test",
+    "test": "jest --config .jestrc.js"
   },
   "repository": {
     "type": "git",
@@ -26,13 +25,17 @@
   },
   "homepage": "https://github.com/matthieubosquet/namespace#readme",
   "devDependencies": {
-    "@tsconfig/node14": "^1.0.0",
-    "@types/ejs": "^3.0.5",
-    "@types/node": "^14.14.14",
-    "n3": "^1.6.4",
-    "ontl": "^0.1.12",
-    "rdf-parse": "^1.6.1",
-    "rdf-store-stream": "^1.1.0",
-    "typescript": "^4.1.3"
+    "@tsconfig/node12": "^1.0.9",
+    "@types/ejs": "^3.0.7",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.4.6",
+    "jest": "^27.0.6",
+    "jest-circus": "^27.0.6",
+    "n3": "^1.11.1",
+    "ontl": "^0.1.13",
+    "rdf-parse": "^1.8.1",
+    "rdf-store-stream": "^1.2.0",
+    "ts-jest": "^27.0.4",
+    "typescript": "^4.3.5"
   }
 }

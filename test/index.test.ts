@@ -1,7 +1,13 @@
 import * as NS from '../src/index';
 
+test('Get namespace base URI', () => {
+  expect(NS.DC.baseURI).toBe("http://purl.org/dc/terms/");
+});
 
-const x = NS.DCTERMS.baseURI;
+test('Get string from DC namespace URI', () => {
+  expect(NS.DC.creator).toBe("http://purl.org/dc/terms/creator");
+});
 
-console.log("DC:", NS.DCTERMS.baseURI, NS.DCTERMS.creator);
-console.log("RDF:", NS.RDF.baseURI, NS.RDF.Alt);
+test('Get string from RDF namespace URI', () => {
+  expect(NS.RDF.Alt).toBe("http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt");
+});

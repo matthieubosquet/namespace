@@ -1,5 +1,5 @@
 // Interface
-export { Namespace } from "./namespace/Namespace";
+export type { Namespace } from "./namespace/Namespace";
 
 // OWL 2 reserved vocabulary namespaces
 export { RDF } from "./namespace/RDF";
